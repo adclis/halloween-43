@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Halloween 4.3 da Ad 🎃</title>
+<meta name="description" content="Segunda, 02/11 • 19 Beach Sports • 12h às 17h30. Confirme sua presença!">
+<meta property="og:title" content="Halloween 4.3 da Ad 🎃">
+<meta property="og:description" content="Segunda, 02/11 • 19 Beach Sports • 12h às 17h30. Confirme sua presença!">
+<meta property="og:image" content="https://halloween-43.vercel.app/convite.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#160a24">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎃</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#160a24;--card:#24123a;--line:#3d2360;--text:#fbefe0;--muted:#c9b3dd;--orange:#ff8a1f;--purple:#8b3fe0;--ok:#4ade80;--no:#f87171}
+:root:not([data-theme="light"]){color-scheme:dark}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#160a24}}
+:root[data-theme="dark"]{--bg:#160a24}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#3a1a5c 0%,var(--bg) 60%) fixed,var(--bg);color:var(--text);font-family:'Poppins',system-ui,sans-serif;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto;padding:24px 16px 48px}
+.hero{display:block;width:100%;max-width:360px;margin:0 auto 12px;border-radius:50%;box-shadow:0 0 60px rgba(255,138,31,.35)}
+h1{font-family:'Permanent Marker',cursive;text-align:center;font-size:30px;margin:8px 0 4px;color:var(--orange);letter-spacing:.5px}
+.sub{text-align:center;color:var(--muted);margin:0 0 20px;font-size:15px}
+.info{display:grid;gap:8px;margin-bottom:24px}
+.pill{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-weight:600}
+.pill span{font-size:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h2{margin:0 0 14px;font-size:19px}
+label{display:block;font-size:14px;color:var(--muted);margin:14px 0 6px}
+input[type=text]{width:100%;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:#1a0d2b;color:var(--text);font-size:16px;font-family:inherit}
+input:focus{outline:2px solid var(--orange);border-color:transparent}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.choice button,.step button{font-family:inherit}
+.opt,.tg{padding:13px;border-radius:12px;border:1px solid var(--line);background:#1a0d2b;color:var(--text);font-size:15px;font-weight:600;cursor:pointer}
+.opt.on.yes,.tg.on.yes{background:var(--orange);color:#1a0d2b;border-color:var(--orange)}
+.opt.on.no,.tg.on.no{background:#3a2050;border-color:var(--purple)}
+.step{display:flex;align-items:center;gap:14px}
+.step button{width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#1a0d2b;color:var(--text);font-size:22px;cursor:pointer}
+.step b{font-size:22px;min-width:28px;text-align:center}
+.cta{width:100%;margin-top:20px;padding:15px;border:0;border-radius:14px;background:linear-gradient(90deg,var(--orange),#ff5e3a);color:#1a0d2b;font-size:17px;font-weight:700;cursor:pointer;font-family:inherit}
+.cta:disabled{opacity:.5;cursor:default}
+.msg{margin-top:12px;font-size:14px;text-align:center;min-height:18px}
+.alt{display:block;text-align:center;margin-top:14px;color:var(--muted);font-size:14px}
+.alt a{color:var(--orange)}
+.list{margin-top:20px}
+.list h2{display:flex;justify-content:space-between;align-items:baseline}
+.list h2 small{font-size:14px;color:var(--orange);font-weight:600}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+.row .g{color:var(--muted);font-size:13px}
+.empty{color:var(--muted);font-size:14px}
+.hidden{display:none}
+.ab{padding:12px;border-radius:12px;border:1px solid var(--line);background:#1a0d2b;color:var(--text);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+.ab.on.yes{background:var(--orange);color:#1a0d2b;border-color:var(--orange)}
+.ab.on.no{background:#3a2050;border-color:var(--purple)}
+.admin{border-color:var(--orange);margin-top:20px}
+.note{color:var(--muted);font-size:13px;margin:-6px 0 6px}
+.acts{display:flex;gap:6px;align-items:center}
+.ic{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 8px;cursor:pointer;font-size:14px}
+.sec{margin:18px 0 4px;font-size:14px;color:var(--muted);font-weight:600}
+.ghost{width:100%;margin-top:8px;padding:12px;border-radius:14px;border:1px solid var(--line);background:none;color:var(--muted);font-family:inherit;font-size:15px;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="hero" src="convite.jpg" alt="Convite Halloween 4.3 da Ad">
+  <h1>Halloween 4.3 da Ad 🎃</h1>
+  <p class="sub">Beach tennis, fantasia e comemoração. Confirma aí!</p>
+  <div class="info">
+    <div class="pill"><span>📅</span>Segunda-feira, 02/11 (feriado)</div>
+    <div class="pill"><span>📍</span>19 Beach Sports</div>
+    <div class="pill"><span>🕛</span>12h às 17h30</div>
+  </div>
+
+  <div class="card" id="form">
+    <h2>Confirme sua presença</h2>
+    <label for="nome">Seu nome</label>
+    <input type="text" id="nome" placeholder="Nome e sobrenome" maxlength="60" autocomplete="name">
+    <label>Você vai?</label>
+    <div class="choice">
+      <button class="opt yes on" data-v="1">🎃 Vou!</button>
+      <button class="opt no" data-v="0">😢 Não vou</button>
+    </div>
+    <div id="torneioBox">
+      <label>Vai participar do torneio?</label>
+      <div class="choice">
+        <button class="tg yes on" data-t="1">🎾 Vou participar</button>
+        <button class="tg no" data-t="0">🎉 Vou só na festa</button>
+      </div>
+    </div>
+    <div id="acompBox">
+      <label>Acompanhantes (além de você)</label>
+      <div class="step"><button id="menos" aria-label="Menos">−</button><b id="qtd">0</b><button id="mais" aria-label="Mais">+</button></div>
+    </div>
+    <button class="cta" id="enviar">Confirmar</button>
+    <div class="msg" id="msg"></div>
+    <div class="alt" id="alt"></div>
+  </div>
+
+  <div class="card list" id="listCard">
+    <h2>Quem vai <small id="total"></small></h2>
+    <div id="lista"><div class="empty">Carregando…</div></div>
+  </div>
+</div>
+<script>
+// URL do "App da Web" do Google Apps Script (termina em /exec)
+const API='https://script.google.com/macros/s/AKfycbw3zqoTOjl8F0Yp_mN88LvLh1AbVgbCBTki1NZkJTelgfCSSQE0-6FiMXxCnU74_6ZR9A/exec';
+
+const $=id=>document.getElementById(id);
+let going=true,torneio=true,qtd=0;
+let myId='';
+try{myId=localStorage.getItem('rsvp_id')||'';if(!myId){myId='r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);localStorage.setItem('rsvp_id',myId)}}catch(e){myId='r'+Date.now().toString(36)+Math.random().toString(36).slice(2,8)}
+
+function setGoing(v){going=v;document.querySelectorAll('.opt').forEach(b=>b.classList.toggle('on',b.dataset.v===(v?'1':'0')));
+  $('torneioBox').classList.toggle('hidden',!v);$('acompBox').classList.toggle('hidden',!v)}
+function setTorneio(v){torneio=v;document.querySelectorAll('.tg').forEach(b=>b.classList.toggle('on',b.dataset.t===(v?'1':'0')))}
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>setGoing(b.dataset.v==='1'));
+document.querySelectorAll('.tg').forEach(b=>b.onclick=()=>setTorneio(b.dataset.t==='1'));
+$('menos').onclick=()=>{qtd=Math.max(0,qtd-1);$('qtd').textContent=qtd};
+$('mais').onclick=()=>{qtd=Math.min(10,qtd+1);$('qtd').textContent=qtd};
+
+// lembra a última resposta neste aparelho
+try{const s=JSON.parse(localStorage.getItem('rsvp_last')||'null');if(s){$('nome').value=s.nome||'';setGoing(!!s.vai);setTorneio(!!s.torneio);qtd=s.acompanhantes||0;$('qtd').textContent=qtd;$('enviar').textContent='Atualizar resposta'}}catch(e){}
+
+function render(list){
+  const L=$('lista');L.textContent='';
+  list.sort((a,b)=>String(a.nome).localeCompare(String(b.nome)));
+  const pessoas=list.reduce((s,d)=>s+1+(Number(d.acompanhantes)||0),0);
+  const jog=list.filter(d=>d.torneio).length;
+  $('total').textContent=list.length?`${pessoas} pessoa${pessoas>1?'s':''} · ${jog} no torneio`:'';
+  if(!list.length){const p=document.createElement('div');p.className='empty';p.textContent='Ninguém confirmou ainda. Seja o primeiro!';L.append(p);return}
+  list.forEach(d=>{const r=document.createElement('div');r.className='row';
+    const n=document.createElement('span');n.textContent=String(d.nome||'Convidado')+(d.torneio?' 🎾':'');
+    const g=document.createElement('span');g.className='g';const k=Number(d.acompanhantes)||0;g.textContent=k?`+${k}`:'';
+    r.append(n,g);L.append(r)});
+}
+async function carregar(){
+  if(API.startsWith('COLE')){$('lista').innerHTML='<div class="empty">Lista disponível em breve.</div>';return}
+  try{const r=await fetch(API+'?t='+Date.now());const j=await r.json();render(j.confirmados||[])}catch(e){}
+}
+
+$('enviar').onclick=async()=>{
+  const nome=$('nome').value.trim();
+  if(!nome){$('msg').textContent='Coloca seu nome 🙂';$('nome').focus();return}
+  if(API.startsWith('COLE')){$('msg').textContent='Confirmações abrem em breve!';return}
+  const dados={id:myId,nome:nome.slice(0,60),vai:going,torneio:going?torneio:false,acompanhantes:going?qtd:0};
+  $('enviar').disabled=true;$('msg').textContent='Salvando…';
+  try{
+    const r=await fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(dados)});
+    const j=await r.json();if(!j.ok)throw 0;
+    try{localStorage.setItem('rsvp_last',JSON.stringify(dados))}catch(e){}
+    $('msg').textContent=going?'Presença confirmada! Te vejo lá e não esqueça da sua fantasia horripilante 🎃👻':'Resposta registrada. Vamos sentir sua falta!';
+    $('enviar').textContent='Atualizar resposta';carregar();
+  }catch(e){$('msg').textContent='Não deu para salvar. Tenta de novo em instantes.'}
+  $('enviar').disabled=false;
+};
+carregar();setInterval(carregar,30000);
+</script>
+</body>
+</html>
